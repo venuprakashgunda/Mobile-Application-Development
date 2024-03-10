@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/temptype"
+        android:icon="@drawable/units_f"
+        android:title="@string/unit"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/calender"
+        android:icon="@drawable/daily"
+        android:title="@string/calender"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/userlocation"
+        android:icon="@drawable/location"
+        android:title="@string/location"
+        app:showAsAction="ifRoom" />
+</menu>

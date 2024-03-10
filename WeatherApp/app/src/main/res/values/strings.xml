@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Visual Weather App</string>
+
+    <string name="calender">calender</string>
+    <string name="location">location</string>
+    <string name="unit">unit</string>
+</resources>

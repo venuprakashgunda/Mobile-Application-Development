@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="4dp"
+    android:paddingTop="8dp"
+    android:paddingEnd="4dp">
+
+    <TextView
+        android:id="@+id/textView_office"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:paddingStart="8dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="U. S. Senator"
+        android:textColor="#7B1FA2"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_nameParty"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="8dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="8dp"
+        android:paddingBottom="8dp"
+        android:text="Tammy Duckworth (Democratic Party)"
+        android:textAlignment="textEnd"
+        android:textColor="#7B1FA2"
+        app:layout_constraintEnd_toEndOf="@+id/textView_office"
+        app:layout_constraintStart_toStartOf="@+id/textView_office"
+        app:layout_constraintTop_toBottomOf="@+id/textView_office" />
+
+    <ImageView
+        android:id="@+id/imageView_seperator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/textView_nameParty"
+        app:layout_constraintStart_toStartOf="@+id/textView_nameParty"
+        app:layout_constraintTop_toBottomOf="@+id/textView_nameParty"
+        app:srcCompat="@drawable/separator" />
+</androidx.constraintlayout.widget.ConstraintLayout>

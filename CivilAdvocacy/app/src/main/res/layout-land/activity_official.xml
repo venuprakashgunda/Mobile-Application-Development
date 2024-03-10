@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_500"
+    tools:context=".ActivityOfficial">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="-28dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/officialOffice"
+                android:layout_width="355dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/officialName"
+                tools:text="U.S. Senator" />
+
+            <TextView
+                android:id="@+id/locationOfficial"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="#7B1FA2"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="65 East Lake Street, Chicago, IL, 60601" />
+
+            <TextView
+                android:id="@+id/officialName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="200dp"
+                android:layout_marginTop="20dp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/locationOfficial"
+                tools:text="Tammy Duckworth" />
+
+            <TextView
+                android:id="@+id/officialParty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="41dp"
+                android:layout_marginEnd="56dp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/locationOfficial"
+                tools:text="Democratic Party" />
+
+            <ImageView
+                android:id="@+id/officialImage"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="16dp"
+                android:contentDescription="@string/official_image"
+                android:onClick="photoClick"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/officialParty"
+                app:srcCompat="@drawable/missing" />
+
+            <ImageView
+                android:id="@+id/partyLogo"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginBottom="-10dp"
+                android:contentDescription="@string/party_logo"
+                android:onClick="logoClicked"
+                app:layout_constraintBottom_toBottomOf="@+id/officialImage"
+                app:layout_constraintEnd_toEndOf="@+id/officialImage"
+                app:layout_constraintStart_toStartOf="@+id/officialImage"
+                app:srcCompat="@drawable/dem_logo" />
+
+            <TextView
+                android:id="@+id/addressText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/address"
+                android:textAlignment="viewStart"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/officialOffice" />
+
+            <TextView
+                android:id="@+id/phoneText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/phone"
+                android:textAlignment="viewStart"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/officialAddress" />
+
+            <TextView
+                android:id="@+id/websiteText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/website"
+                android:textAlignment="viewStart"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/emailText" />
+
+            <TextView
+                android:id="@+id/officialPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="viewStart"
+                android:textColor="@color/white"
+                android:textColorLink="@color/white"
+                app:layout_constraintBaseline_toBaselineOf="@+id/phoneText"
+                app:layout_constraintStart_toStartOf="@+id/officialAddress"
+                tools:text="(202) 224-2854" />
+
+            <TextView
+                android:id="@+id/officialWebsite"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="viewStart"
+                android:textColor="@color/white"
+                android:textColorLink="@color/white"
+                app:layout_constraintBaseline_toBaselineOf="@+id/websiteText"
+                app:layout_constraintEnd_toEndOf="@+id/officialAddress"
+                app:layout_constraintStart_toStartOf="@+id/officialEmail"
+                tools:text="https://www.duckworth.senate.gov" />
+
+            <TextView
+                android:id="@+id/officialAddress"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="64dp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/white"
+                android:textColorLink="@color/white"
+                app:layout_constraintBaseline_toBaselineOf="@+id/addressText"
+                app:layout_constraintEnd_toStartOf="@+id/officialImage"
+                app:layout_constraintStart_toEndOf="@+id/addressText"
+                tools:text="524 Hart Senate Office Building, \nWashington, DC, 20510" />
+
+            <ImageView
+                android:id="@+id/youtubeLogo"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:contentDescription="@string/youtube"
+                android:onClick="youTubeClicked"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/facebookLogo"
+                app:layout_constraintTop_toTopOf="@+id/facebookLogo"
+                app:srcCompat="@drawable/youtube" />
+
+            <ImageView
+                android:id="@+id/twitterLogo"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:contentDescription="@string/twitter"
+                android:onClick="twitterClicked"
+                app:layout_constraintEnd_toStartOf="@+id/facebookLogo"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/facebookLogo"
+                app:srcCompat="@drawable/twitter" />
+
+            <ImageView
+                android:id="@+id/facebookLogo"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="64dp"
+                android:contentDescription="@string/facebook"
+                android:onClick="facebookClicked"
+                app:layout_constraintEnd_toStartOf="@+id/youtubeLogo"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/twitterLogo"
+                app:layout_constraintTop_toBottomOf="@+id/officialWebsite"
+                app:srcCompat="@drawable/facebook" />
+
+            <TextView
+                android:id="@+id/emailText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/email"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/phoneText" />
+
+            <TextView
+                android:id="@+id/officialEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textColorLink="@color/white"
+                app:layout_constraintBottom_toBottomOf="@+id/emailText"
+                app:layout_constraintStart_toStartOf="@+id/officialPhone"
+                tools:text="someone@something.com" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Civil Advocacy</string>
+    <string name="about">About</string>
+    <string name="location">Location</string>
+    <string name="official_image">Official Image</string>
+    <string name="party_logo">Party Logo</string>
+    <string name="address">Address:</string>
+    <string name="phone">Phone:</string>
+    <string name="website">Website:</string>
+    <string name="youtube">Youtube link</string>
+    <string name="twitter">Twitter Link</string>
+    <string name="facebook">Facebook Link</string>
+    <string name="deniedText">Permission denied</string>
+    <string name="email">Email:</string>
+    <string name="civil_advocacy">Civil Advocacy</string>
+    <string name="data_provided_by">Data Provided by</string>
+    <string name="google_civic_information_api"><u>Google Civic Information API</u></string>
+    <string name="indraneel">© 2022, Indraneel Katta</string>
+    <string name="version_1_0">Version 1.0</string>
+    <string name="location_">location</string>
+    <string name="office">office</string>
+    <string name="name">name.</string>
+    <string name="no_network">No Network Connection\n Data cannot be accessed/loaded without an internet connection.</string>
+    <string name="unresolved">Location Unresolved</string>
+</resources>
